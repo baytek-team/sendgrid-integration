@@ -3,7 +3,7 @@
 /*
 Plugin Name: Baytek SendGrid Integration
 Description: Use SendGrid for all system emails.
-Version: 1.0.0
+Version: 1.0.1
 Author: Baytek
 Author URI: http://www.baytek.ca
 Text Domain: baytek-dispatch-lattice

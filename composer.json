@@ -16,7 +16,8 @@
             "Baytek\\Wordpress\\SendGrid\\": "app/"
         },
         "files": [
-            "helpers/pluggable.php"
+            "helpers/pluggable.php",
+            "lib/updater.php"
         ]
     },
     "require": {

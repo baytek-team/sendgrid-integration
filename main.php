@@ -30,9 +30,9 @@ use Baytek\Wordpress\SendGrid\Plugin;
 /**
  * Init plugin
  */
-function baytek_dispatch_lattice_init() {
+function baytek_sendgrid_integration_init() {
 	$plugin = Plugin::getInstance();
 	$plugin->setPaths( __FILE__ );
 	$plugin->run();
 }
-add_action( 'plugins_loaded', 'baytek_dispatch_lattice_init' );
+add_action( 'plugins_loaded', 'baytek_sendgrid_integration_init' );

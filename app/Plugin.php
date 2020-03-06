@@ -15,13 +15,19 @@ class Plugin extends BasePlugin {
 	/**
 	 * Plugin constants
 	 */
-	const TEXTDOMAIN = 'baytek-dispatch-lattice';
-	const VERSION = '1.0.1';
+	const TEXTDOMAIN = 'baytek-sendgrid-integration';
+	const VERSION = '1.0.0';
 
 	/**
 	 * Plugin properties
 	 */
 	protected static $apiKey;
+
+	/**
+	 * GitHub properties
+	 */
+	protected $gh_repo = 'sendgrid-integration';
+	protected $plugin_folder = 'baytek-sendgrid-integration';
 
 	/**
 	 * Set the plugin paths
@@ -34,7 +40,7 @@ class Plugin extends BasePlugin {
 		parent::setPaths( $plugin_path );
 
 		// Set the theme override directory
-		$this->paths['theme-override'] = '/baytek/baytek-dispatch-lattice';
+		$this->paths['theme-override'] = '/baytek/sendgrid-integration';
 	}
 
 	/**
@@ -48,7 +54,7 @@ class Plugin extends BasePlugin {
 		new Settings( static::$instance );
 
 		// Load textdomain
-		load_plugin_textdomain( self::TEXTDOMAIN, false, 'baytek-dispatch-lattice/resources/assets/languages/' );
+		load_plugin_textdomain( self::TEXTDOMAIN, false, 'resources/assets/languages/' );
 	}
 
 	/**

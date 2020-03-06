@@ -22,6 +22,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Trying update from plugin header in main.php instead of README.md
 
-## [1.0.3] - 2020-03-06
+## [1.0.4] - 2020-03-06
 ### Changed
-- More plugin cleanup
+- Minor changes
+
+## [1.0.5] - 2020-03-06
+### Changed
+- Minor changes
+
+## [1.0.6] - 2020-03-06
+### Changed
+- Minor changes
+
+## [1.0.7] - 2020-03-06
+### Changed
+- Minor changes
+
+## [1.0.8] - 2020-03-06
+### Changed
+- Minor changes

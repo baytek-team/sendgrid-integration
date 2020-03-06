@@ -1,0 +1,32 @@
+{
+	"name": "baytek-team/sendgrid-integration",
+    "description": "Use SendGrid for all system emails.",
+    "type": "wordpress-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sarah Marinoff",
+            "email": "sarah@baytek.ca"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Baytek\\Wordpress\\SendGrid\\": "app/"
+        },
+        "files": [
+            "helpers/pluggable.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.2",
+        "sendgrid/sendgrid": "^7.4"
+    },
+    "extra": {
+        "wordpress": {
+            "slug": "baytek-dispatch-lattice",
+            "version": "1.0.0"
+        }
+    }
+    
+}

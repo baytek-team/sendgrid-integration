@@ -1,4 +1,4 @@
-<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+<?php
 
 /*
 Plugin Name: Baytek SendGrid Integration
@@ -36,3 +36,9 @@ function baytek_sendgrid_integration_init() {
 	$plugin->run();
 }
 add_action( 'plugins_loaded', 'baytek_sendgrid_integration_init' );
+
+function baytek_sendgrid_integration_autoupdate() {
+	$plugin = Plugin::getInstance();
+	$plugin->autoupdate( __FILE__ );
+}
+add_action( 'init', 'baytek_sendgrid_integration_autoupdate' );

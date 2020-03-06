@@ -82,7 +82,7 @@ abstract class BasePlugin {
 	 */
 	protected function autoupdate($plugin_path) {
 
-		if (!class_exists('WPGitHubUpdater')) return;
+		if (!class_exists('WPGitHubUpdater') || !is_admin()) return;
 
 		$config = [
 			'slug' => plugin_basename($plugin_path), // this is the slug of your plugin

@@ -3,7 +3,7 @@
     "description": "Use SendGrid for all system emails.",
     "type": "wordpress-plugin",
     "homepage": "https://github.com/baytek-team/sendgrid-integration",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "MIT",
     "authors": [
         {

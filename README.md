@@ -8,3 +8,5 @@ Includes:
 Note:
 * You must add SendGrid records to your DNS for optimal mail deliverability
 * Check your SendGrid account for further instructions
+
+~Current Version:1.0.5~

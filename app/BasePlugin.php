@@ -2,6 +2,8 @@
 
 namespace Baytek\Wordpress\SendGrid;
 
+use WP_GitHub_Updater;
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
@@ -82,7 +84,7 @@ abstract class BasePlugin {
 	 */
 	public function autoupdate($plugin_path) {
 
-		if (!class_exists('WPGitHubUpdater') || !is_admin()) return;
+		if (!class_exists('WP_GitHub_Updater') || !is_admin()) return;
 
 		$config = [
 			'slug' => plugin_basename($plugin_path), // this is the slug of your plugin
@@ -97,7 +99,7 @@ abstract class BasePlugin {
 			'readme' => 'README.md' // which file to use as the readme for the version number
 		];
 
-		new WPGitHubUpdater($config);
+		new WP_GitHub_Updater($config);
 	}
 
 	/**

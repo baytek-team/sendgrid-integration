@@ -13,3 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.1] - 2020-03-06
 ### Changed
 - Fixing fatal errors in BasePlugin.php
+
+## [1.0.2] - 2020-03-06
+### Changed
+- Fixing additional fatal errors in BasePlugin.php

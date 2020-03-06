@@ -16,7 +16,7 @@ class Plugin extends BasePlugin {
 	 * Plugin constants
 	 */
 	const TEXTDOMAIN = 'baytek-sendgrid-integration';
-	const VERSION = '1.0.1';
+	const VERSION = '1.0.2';
 
 	/**
 	 * Plugin properties

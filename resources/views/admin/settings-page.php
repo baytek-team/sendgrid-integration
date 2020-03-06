@@ -2,7 +2,7 @@
 
 //Template for the admin page
 
-use BaytekDispatchLattice\Plugin;
+use Baytek\Wordpress\SendGrid\Plugin;
 
 ?>
 

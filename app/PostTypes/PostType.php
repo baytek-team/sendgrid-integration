@@ -1,8 +1,8 @@
 <?php
 
-namespace BaytekDispatchLattice\PostTypes;
+namespace Baytek\Wordpress\SendGrid\PostTypes;
 
-use \BaytekDispatchLattice\Plugin;
+use \Baytek\Wordpress\SendGrid\Plugin;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -43,7 +43,7 @@ abstract class PostType {
 	 * Create the PostType object, setting the main plugin
 	 * instance and calling the addHooks() method
 	 *
-	 * @param  BaytekDispatchLattice\Plugin  $instance
+	 * @param  Baytek\Wordpress\SendGrid\Plugin  $instance
 	 */
 	public function __construct( $instance ) {
 		$this->plugin = $instance;

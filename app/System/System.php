@@ -1,9 +1,9 @@
 <?php
 
-namespace BaytekDispatchLattice\System;
+namespace Baytek\Wordpress\SendGrid\System;
 
-use BaytekDispatchLattice\Plugin;
-use BaytekDispatchLattice\ViewHandler;
+use Baytek\Wordpress\SendGrid\Plugin;
+use Baytek\Wordpress\SendGrid\ViewHandler;
 
 use WP_Query;
 
@@ -23,7 +23,7 @@ abstract class System {
 	 * Create the System object, setting the main plugin
 	 * instance and calling the addHooks() method
 	 *
-	 * @param  BaytekDispatchLattice\Plugin  $instance
+	 * @param  Baytek\Wordpress\SendGrid\Plugin  $instance
 	 */
 	public function __construct( $instance ) {
 		$this->plugin = $instance;

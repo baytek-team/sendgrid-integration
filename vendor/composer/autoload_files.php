@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     '3f8bdd3b35094c73a26f0106e3c0f8b2' => $vendorDir . '/sendgrid/sendgrid/lib/SendGrid.php',
-    '49c6217eb1717eb39cf68c84e43685a6' => $baseDir . '/app/pluggable.php',
+    '21cbceac755be8fb7e9749d0493f9436' => $baseDir . '/helpers/pluggable.php',
 );

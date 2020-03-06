@@ -1,8 +1,8 @@
 <?php
 
-namespace BaytekDispatchLattice;
+namespace Baytek\Wordpress\SendGrid;
 
-use BaytekDispatchLattice\System\Settings;
+use Baytek\Wordpress\SendGrid\System\Settings;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 

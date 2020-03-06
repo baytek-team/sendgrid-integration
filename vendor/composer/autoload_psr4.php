@@ -10,5 +10,5 @@ return array(
     'SendGrid\\Mail\\' => array($vendorDir . '/sendgrid/sendgrid/lib/mail'),
     'SendGrid\\Contacts\\' => array($vendorDir . '/sendgrid/sendgrid/lib/contacts'),
     'SendGrid\\' => array($vendorDir . '/sendgrid/php-http-client/lib', $vendorDir . '/sendgrid/sendgrid/lib'),
-    'BaytekDispatchLattice\\' => array($baseDir . '/app/BaytekDispatchLattice'),
+    'Baytek\\Wordpress\\SendGrid\\' => array($baseDir . '/app'),
 );

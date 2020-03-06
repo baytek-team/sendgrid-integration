@@ -1,8 +1,8 @@
 <?php
 
-namespace BaytekDispatchLattice\MetaBoxes;
+namespace Baytek\Wordpress\SendGrid\MetaBoxes;
 
-use BaytekDispatchLattice\Plugin;
+use Baytek\Wordpress\SendGrid\Plugin;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -48,7 +48,7 @@ abstract class MetaBox {
 	 * Create the MetaBox object, setting the main plugin
 	 * instance and calling the addHooks() method
 	 *
-	 * @param  BaytekDispatchLattice\Plugin  $instance
+	 * @param  Baytek\Wordpress\SendGrid\Plugin  $instance
 	 */
 	public function __construct( $instance ) {
 		$this->plugin = $instance;

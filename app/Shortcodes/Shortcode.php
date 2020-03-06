@@ -1,8 +1,8 @@
 <?php
 
-namespace BaytekDispatchLattice\Shortcodes;
+namespace Baytek\Wordpress\SendGrid\Shortcodes;
 
-use BaytekDispatchLattice\Plugin;
+use Baytek\Wordpress\SendGrid\Plugin;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -26,7 +26,7 @@ abstract class Shortcode {
 	 * Create the MetaBox object, setting the main plugin
 	 * instance and calling the addHooks() method
 	 *
-	 * @param  BaytekDispatchLattice\Plugin  $instance
+	 * @param  Baytek\Wordpress\SendGrid\Plugin  $instance
 	 */
 	public function __construct( $instance ) {
 		$this->plugin = $instance;

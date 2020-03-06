@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2bd649a2b58abb588a557f067fff8b3c
+class ComposerStaticInite15a4bbfae306ea1dc715feb7184c65a
 {
     public static $files = array (
         '3f8bdd3b35094c73a26f0106e3c0f8b2' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/SendGrid.php',
-        '49c6217eb1717eb39cf68c84e43685a6' => __DIR__ . '/../..' . '/app/pluggable.php',
+        '21cbceac755be8fb7e9749d0493f9436' => __DIR__ . '/../..' . '/helpers/pluggable.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -21,7 +21,7 @@ class ComposerStaticInit2bd649a2b58abb588a557f067fff8b3c
         ),
         'B' => 
         array (
-            'BaytekDispatchLattice\\' => 22,
+            'Baytek\\Wordpress\\SendGrid\\' => 26,
         ),
     );
 
@@ -43,17 +43,17 @@ class ComposerStaticInit2bd649a2b58abb588a557f067fff8b3c
             0 => __DIR__ . '/..' . '/sendgrid/php-http-client/lib',
             1 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib',
         ),
-        'BaytekDispatchLattice\\' => 
+        'Baytek\\Wordpress\\SendGrid\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/BaytekDispatchLattice',
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2bd649a2b58abb588a557f067fff8b3c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2bd649a2b58abb588a557f067fff8b3c::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite15a4bbfae306ea1dc715feb7184c65a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite15a4bbfae306ea1dc715feb7184c65a::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

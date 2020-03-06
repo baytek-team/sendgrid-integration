@@ -5,7 +5,7 @@
  */
 
 use SendGrid\Mail\Mail;
-use BaytekDispatchLattice\Plugin;
+use Baytek\Wordpress\SendGrid\Plugin;
 
 /**
  * Make sure we have a SendGrid API Key

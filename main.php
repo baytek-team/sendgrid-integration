@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 // Require composer autoloader
 require __DIR__ . '/vendor/autoload.php';
 
-use BaytekDispatchLattice\Plugin;
+use Baytek\Wordpress\SendGrid\Plugin;
 
 /**
  * Init plugin

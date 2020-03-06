@@ -1,9 +1,9 @@
 <?php
 
-namespace BaytekDispatchLattice\System;
+namespace Baytek\Wordpress\SendGrid\System;
 
-use BaytekDispatchLattice\Plugin;
-use BaytekDispatchLattice\ViewHandler;
+use Baytek\Wordpress\SendGrid\Plugin;
+use Baytek\Wordpress\SendGrid\ViewHandler;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 

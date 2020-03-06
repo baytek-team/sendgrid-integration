@@ -3,7 +3,7 @@
 /*
 Plugin Name: Baytek SendGrid Integration
 Description: Use SendGrid for all system emails.
-Version: 1.0.6
+Version: 1.0.7
 Author: Baytek
 Author URI: https://www.baytek.ca
 Text Domain: baytek-sendgrid-integration

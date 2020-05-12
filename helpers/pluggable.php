@@ -59,6 +59,9 @@ if (! function_exists( 'wp_mail' ) ) :
 			$to = explode( ',', $to );
 		}
 
+		//Unique to
+		$to = array_unique($to);
+
 		if ( isset( $atts['subject'] ) ) {
 			$subject = $atts['subject'];
 		}
@@ -152,10 +155,10 @@ if (! function_exists( 'wp_mail' ) ) :
 							}
 							break;
 						case 'cc':
-							$cc = array_merge( (array) $cc, explode( ',', $content ) );
+							$cc = array_unique( array_merge( (array) $cc, explode( ',', $content ) ) );
 							break;
 						case 'bcc':
-							$bcc = array_merge( (array) $bcc, explode( ',', $content ) );
+							$bcc = array_unique( array_merge( (array) $bcc, explode( ',', $content ) ) );
 							break;
 						case 'reply-to':
 							$reply_to = array_merge( (array) $reply_to, explode( ',', $content ) );
@@ -167,6 +170,19 @@ if (! function_exists( 'wp_mail' ) ) :
 					}
 				}
 			}
+		}
+
+		// remove email addresses from CC if they are already in the To field
+		if ( ! empty( $to ) && ! empty( $cc ) ) {
+			$cc = array_diff( $cc, $to );
+		}
+		// remove email addresses from BCC if they are already in the To field
+		if (!empty($to) && !empty($bcc)) {
+			$bcc = array_diff($bcc, $to);
+		}
+		// remove email addresses from BCC if they are already in the CC field
+		if ( ! empty( $cc ) && ! empty( $bcc ) ) {
+			$bcc = array_diff( $bcc, $cc );
 		}
 
 		// From email and name

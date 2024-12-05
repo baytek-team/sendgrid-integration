@@ -35,7 +35,7 @@ function baytek_sendgrid_integration_init() {
 	$plugin->setPaths( __FILE__ );
 	$plugin->run();
 }
-add_action( 'plugins_loaded', 'baytek_sendgrid_integration_init' );
+add_action( 'init', 'baytek_sendgrid_integration_init' );
 
 function baytek_sendgrid_integration_autoupdate() {
 	$plugin = Plugin::getInstance();
